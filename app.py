@@ -5,7 +5,7 @@ import plotly.express as px
 
 df = pd.read_csv('india.csv')
 list_of_states = list(df.State.unique())
-list_of_states.insert(0,'overallIndia')
+list_of_states.insert(0,'overall India')
 list_of_parametrs = list(df.columns.drop(['State','District']))
 st.sidebar.title('DATA VIZ')
 selected_state=st.sidebar.selectbox('Select a state',list_of_states)
